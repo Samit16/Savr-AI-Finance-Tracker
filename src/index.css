@@ -1,0 +1,196 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+
+@layer base {
+  :root {
+    --background: 240 100% 99%; /* very light blue/white */
+    --foreground: 240 20% 20%; /* dark blue-gray */
+
+    --card: 0 0% 100%; /* pure white */
+    --card-foreground: 240 20% 20%; /* dark blue-gray */
+
+    --popover: 0 0% 100%; /* pure white */
+    --popover-foreground: 240 20% 20%; /* dark blue-gray */
+
+    --primary: 240 100% 60%; /* bright blue like YNAB */
+    --primary-foreground: 0 0% 100%; /* white */
+
+    --secondary: 140 60% 50%; /* bright green accent */
+    --secondary-foreground: 0 0% 100%; /* white */
+
+    --muted: 240 20% 96%; /* very light blue-gray */
+    --muted-foreground: 240 10% 50%; /* medium blue-gray */
+
+    --accent: 140 60% 50%; /* green accent */
+    --accent-foreground: 0 0% 100%; /* white */
+
+    --destructive: 0 70% 55%; /* red */
+    --destructive-foreground: 0 0% 100%; /* white */
+
+    --border: 240 20% 90%; /* light blue-gray border */
+    --input: 240 20% 95%; /* light blue-gray input */
+    --ring: 240 100% 60%; /* bright blue ring */
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 240 30% 98%; /* very light blue */
+    --sidebar-foreground: 240 20% 20%; /* dark blue-gray */
+    --sidebar-primary: 240 100% 60%; /* bright blue */
+    --sidebar-primary-foreground: 0 0% 100%; /* white */
+    --sidebar-accent: 240 20% 94%; /* light blue-gray */
+    --sidebar-accent-foreground: 240 20% 20%; /* dark blue-gray */
+    --sidebar-border: 240 20% 88%; /* light border */
+    --sidebar-ring: 240 100% 60%; /* bright blue ring */
+  }
+
+  .dark {
+    --background: 240 30% 8%; /* very dark blue */
+    --foreground: 240 20% 95%; /* very light blue-gray */
+
+    --card: 240 25% 12%; /* dark blue card */
+    --card-foreground: 240 20% 95%; /* very light blue-gray */
+
+    --popover: 240 25% 12%; /* dark blue */
+    --popover-foreground: 240 20% 95%; /* very light blue-gray */
+
+    --primary: 240 100% 65%; /* bright blue */
+    --primary-foreground: 240 30% 8%; /* very dark blue */
+
+    --secondary: 140 60% 45%; /* green accent */
+    --secondary-foreground: 240 30% 8%; /* very dark blue */
+
+    --muted: 240 20% 15%; /* dark blue-gray */
+    --muted-foreground: 240 10% 65%; /* medium light blue-gray */
+
+    --accent: 140 60% 45%; /* green accent */
+    --accent-foreground: 240 30% 8%; /* very dark blue */
+
+    --destructive: 0 70% 60%; /* red */
+    --destructive-foreground: 240 20% 95%; /* very light blue-gray */
+
+    --border: 240 20% 18%; /* dark blue-gray border */
+    --input: 240 20% 18%; /* dark blue-gray input */
+    --ring: 240 100% 65%; /* bright blue ring */
+
+    --sidebar-background: 240 30% 6%; /* very dark blue */
+    --sidebar-foreground: 240 20% 90%; /* light blue-gray */
+    --sidebar-primary: 240 100% 65%; /* bright blue */
+    --sidebar-primary-foreground: 240 30% 6%; /* very dark blue */
+    --sidebar-accent: 240 20% 12%; /* dark blue-gray */
+    --sidebar-accent-foreground: 240 20% 90%; /* light blue-gray */
+    --sidebar-border: 240 20% 12%; /* dark border */
+    --sidebar-ring: 240 100% 65%; /* bright blue ring */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background: linear-gradient(135deg, 
+      hsl(240 60% 75%) 0%, 
+      hsl(240 50% 80%) 25%, 
+      hsl(230 45% 85%) 50%, 
+      hsl(220 40% 88%) 75%, 
+      hsl(210 35% 90%) 100%);
+    min-height: 100vh;
+    background-attachment: fixed;
+  }
+
+  .dark body {
+    background: linear-gradient(135deg, 
+      hsl(240 50% 15%) 0%, 
+      hsl(240 40% 20%) 25%, 
+      hsl(230 35% 25%) 50%, 
+      hsl(220 30% 30%) 75%, 
+      hsl(140 40% 25%) 100%);
+  }
+}
+
+/* Custom scrollbar for chat */
+.chat-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-scroll::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+  border-radius: 10px;
+}
+
+.chat-scroll::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground));
+  border-radius: 10px;
+}
+
+.chat-scroll::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary));
+}
+
+/* Glassmorphism effect - updated for theme */
+.glass {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.dark .glass {
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Parallax container */
+.parallax-container {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 1px;
+}
+
+.parallax-element {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax-back {
+  transform: translateZ(-1px) scale(2);
+}
+
+.parallax-base {
+  transform: translateZ(0);
+}
+
+/* Enhanced gradient background for hero section */
+.hero-gradient {
+  background: linear-gradient(135deg, 
+    hsl(240 70% 65%) 0%, 
+    hsl(240 60% 70%) 15%, 
+    hsl(230 55% 75%) 30%, 
+    hsl(220 50% 80%) 45%, 
+    hsl(210 45% 82%) 60%, 
+    hsl(200 40% 85%) 75%, 
+    hsl(140 50% 70%) 90%, 
+    hsl(140 55% 65%) 100%);
+}
+
+.dark .hero-gradient {
+  background: linear-gradient(135deg, 
+    hsl(240 50% 20%) 0%, 
+    hsl(240 45% 25%) 15%, 
+    hsl(230 40% 30%) 30%, 
+    hsl(220 35% 35%) 45%, 
+    hsl(210 30% 40%) 60%, 
+    hsl(200 25% 45%) 75%, 
+    hsl(140 45% 30%) 90%, 
+    hsl(140 50% 25%) 100%);
+}
