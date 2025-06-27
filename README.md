@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/0000000/savr-mockup.png" width="500" alt="Savr iPhone Mockup">
+  <img src="public/mockup.png" width="500" alt="Savr iPhone Mockup">
 </p>
 
 ---
@@ -39,14 +39,6 @@
 
 ---
 
-## 📸 Preview
-
-| Desktop View | Mobile View |
-| ------------ | ------------ |
-| ![desktop](https://user-images.githubusercontent.com/0000000/savr-desktop.png) | ![mobile](https://user-images.githubusercontent.com/0000000/savr-mobile.png) |
-
----
-
 ## 🚀 Getting Started
 
 ### Clone & Run Locally
@@ -57,3 +49,12 @@ cd savr
 npm install
 npm run dev
 ```
+## For Running
+```bash
+npm run build
+```
+---
+## ✨ Live Demo
+👉 https://savrfinancetracker.netlify.app
+---
+<p align="center"> <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" width="200" /> <br /> <b>Manage Money. Master Life. 💸</b> </p> 
