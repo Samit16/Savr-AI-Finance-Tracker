@@ -1,73 +1,59 @@
-# Welcome to your Lovable project
+<h1 align="center">
+  <img src="https://media.giphy.com/media/5GoVLqeAOo6PK/giphy.gif" width="50">
+  SAVR – AI Personal Finance Assistant
+  <img src="https://media.giphy.com/media/IThjAlJnD9WNO/giphy.gif" width="50">
+</h1>
 
-## Project info
+<p align="center">
+  <img src="https://img.shields.io/badge/Built%20With-Bolt.new-000000?style=for-the-badge&logo=bolt&logoColor=white">
+  <img src="https://img.shields.io/badge/Framework-Vite-646cff?style=for-the-badge&logo=vite&logoColor=white">
+  <img src="https://img.shields.io/badge/Deployed%20on-Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white">
+</p>
 
-**URL**: https://lovable.dev/projects/f801c6ff-93ac-4a76-b435-7c7e57e84e9b
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/0000000/savr-mockup.png" width="500" alt="Savr iPhone Mockup">
+</p>
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🧠 About Savr
 
-**Use Lovable**
+**Savr** is a beautifully crafted AI-powered finance assistant built for modern users. Whether you're saving for your next vacation or managing rent and groceries — Savr has your back.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f801c6ff-93ac-4a76-b435-7c7e57e84e9b) and start prompting.
+### ✨ Features
+- 📊 **Quick Calculator** – Get real-time balance based on your income/expenses.
+- 🧠 **AI-Powered Chatbot** – Financial guidance just a prompt away.
+- 📅 **Budget Tracker** – Visually track goals like groceries, rent, and more.
+- 💻 **Responsive Design** – Seamless experience across all devices.
+- 🌑 **Dark Mode Ready** – Because aesthetic > everything.
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## ⚙️ Built With
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- 🛠️ [Bolt.new](https://bolt.new/) – No-code + custom code magic.
+- ⚡ Vite – Lightning-fast front-end tooling.
+- 🎨 TailwindCSS – For that clean, modern UI.
+- 🧱 TypeScript – Type-safe and future-proof.
+- 💚 Netlify – One-click deploy heaven.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 📸 Preview
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+| Desktop View | Mobile View |
+| ------------ | ------------ |
+| ![desktop](https://user-images.githubusercontent.com/0000000/savr-desktop.png) | ![mobile](https://user-images.githubusercontent.com/0000000/savr-mobile.png) |
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🚀 Getting Started
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### Clone & Run Locally
+
+```bash
+git clone https://github.com/your-username/savr.git
+cd savr
+npm install
 npm run dev
 ```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/f801c6ff-93ac-4a76-b435-7c7e57e84e9b) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
