@@ -18,7 +18,7 @@
 
 ## 🧠 About Savr
 
-**Savr** is a beautifully crafted AI-powered finance assistant built for modern users. Whether you're saving for your next vacation or managing rent and groceries — Savr has your back.
+**Savr** is a beautifully crafted AI-powered finance assistant built for modern users. Whether you're saving for your next vacation or managing rent and groceries — Savr has got your back.
 
 ### ✨ Features
 - 📊 **Quick Calculator** – Get real-time balance based on your income/expenses.
